@@ -89,12 +89,13 @@ function ChannelLink({ img, link, name }) {
 
 async function Subs({ name }: { name: string }) {
   noStore();
-  let subscribers;
-  if (name === '@leerob') {
-    subscribers = await getLeeYouTubeSubs();
-  } else {
-    subscribers = await getVercelYouTubeSubs();
-  }
+  let subscribers = 100;
+  
+  // if (name === '@leerob') {
+  //   subscribers = await getLeeYouTubeSubs();
+  // } else {
+  //   subscribers = await getVercelYouTubeSubs();
+  // }
 
   return (
     <p className="text-neutral-600 dark:text-neutral-400">
